@@ -1,7 +1,5 @@
 <template>
-  <div class="app">
-    <DuckWelcome />
-  </div>
+  <div class="app" />
 </template>
 
 <style scoped lang="scss">
