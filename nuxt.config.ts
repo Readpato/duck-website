@@ -10,7 +10,7 @@ const sassAdditionalData = () => {
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Duck nuxt starter',
+      title: 'Patrick Raedler',
       link: [{ rel: 'icon', type: 'image/jpeg', href: '~public/favicon.ico' }],
     },
   },
