@@ -10,7 +10,7 @@ const gitHubLink = 'https://github.com/Readpato'
       </RouterLink>
       <ul>
         <li>
-          <BaseLink :link="gitHubLink" icon="logo-github" />
+          <BaseLink :href="gitHubLink" icon="i-carbon-logo-github" />
         </li>
       </ul>
     </nav>
