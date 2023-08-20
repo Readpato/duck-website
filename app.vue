@@ -1,7 +1,8 @@
 <template>
-  <div class="app">
+  <div class="app flex flex-col">
     <TheHeader />
-    <NuxtPage />
+    <NuxtPage class="flex-grow" />
+    <TheFooter />
   </div>
 </template>
 
