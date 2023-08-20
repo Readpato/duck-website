@@ -8,11 +8,13 @@ const gitHubLink = 'https://github.com/Readpato'
       <RouterLink to="/" class="font-bold text-white">
         Patrick Raedler
       </RouterLink>
-      <ul>
-        <li>
-          <BaseLink :href="gitHubLink" icon="i-carbon-logo-github" />
-        </li>
-      </ul>
+      <nav>
+        <ul>
+          <li>
+            <BaseLink :href="gitHubLink" icon="i-carbon-logo-github" />
+          </li>
+        </ul>
+      </nav>
     </nav>
   </header>
 </template>
