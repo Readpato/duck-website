@@ -10,6 +10,9 @@ const sassAdditionalData = () => {
 export default defineNuxtConfig({
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'en',
+      },
       title: 'Patrick Raedler',
       link: [{ rel: 'icon', type: 'image/jpeg', href: '~public/favicon.ico' }],
     },
