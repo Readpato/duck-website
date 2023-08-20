@@ -1,16 +1,20 @@
 <script setup lang="ts">
-defineProps<{
+withDefaults(defineProps<{
+  href: string
   icon?: string
-  text?: string
-  link: string
-}>()
+  secondary?: boolean
+  target?: string
+}>(), {
+  target: '_blank',
+},
+)
 </script>
 
 <template>
-  <a :href="link" target="_blank">
-    <div v-if="icon" :class="`i-carbon-${icon}`" class="w-7 h-7 block" />
-    {{ text }}
-  </a>
+  <NuxtLink :href="href" :target="target" :class="{ secondary }">
+    <div v-if="icon" :class="icon" class="w-7 h-7 block" />
+    <slot />
+  </NuxtLink>
 </template>
 
 <style scoped lang="scss">
@@ -21,6 +25,17 @@ a {
 
   &:hover {
     opacity: 1;
+  }
+
+  &.secondary {
+    border-bottom: 1px solid rgba($c-border, .3);
+    opacity: 1;
+    text-decoration: none;
+    transition: border-bottom 0.2s ease;
+
+    &:hover {
+      border-bottom: 1px solid rgba($c-border, 1);
+    }
   }
 }
 </style>
