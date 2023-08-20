@@ -13,4 +13,8 @@
   color: $c-text;
   font-family: Inter, sans-serif;
 }
+
+p + p {
+  margin-top: toRem(16px);
+}
 </style>
