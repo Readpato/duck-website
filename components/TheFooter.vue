@@ -24,7 +24,7 @@ const links = [{
 </script>
 
 <template>
-  <footer class="flex flex-col justify-center items-center space-y-5 text-sm">
+  <footer class="flex flex-col justify-center items-center py-2 space-y-3 text-sm">
     <div class="line w-15 h-[1px]" />
     <div>&copy; {{ new Date().getFullYear() }} - Patrick Raedler</div>
     <nav>
