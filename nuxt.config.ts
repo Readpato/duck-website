@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   css: [
     '@unocss/reset/tailwind.css',
   ],
-  modules: ['@unocss/nuxt', '@vueuse/nuxt', '@nuxt/test-utils/module', '@nuxt/content'],
+  modules: ['@vueuse/nuxt', '@nuxt/test-utils/module', '@nuxt/content', '@unocss/nuxt'],
   vite: {
     css: {
       preprocessorOptions: {
@@ -29,3 +29,4 @@ export default defineNuxtConfig({
     },
   },
 })
+
