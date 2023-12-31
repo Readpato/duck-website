@@ -16,6 +16,4 @@ export default defineConfig({
     presetUno(),
     presetAttributify(),
   ],
-  shortcuts: {},
-  rules: [],
 })

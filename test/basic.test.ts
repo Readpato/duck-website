@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 
-describe('A basic test', () => {
-  it('Adds a number', () => {
+describe('a basic test', () => {
+  it('adds a number', () => {
     expect(1 + 1).toEqual(2)
   })
 })

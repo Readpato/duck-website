@@ -3,24 +3,19 @@ const links = [{
   icon: 'i-carbon-logo-github',
   link: 'https://github.com/Readpato',
   name: 'GitHub',
-},
-{
+}, {
   icon: 'i-carbon-logo-linkedin',
   link: 'https://www.linkedin.com/in/patrickraedler/',
   name: 'LinkedIn',
-},
-{
+}, {
   icon: 'i-carbon-logo-mastodon',
   link: 'https://mas.to/@readpato',
   name: 'Mastodon',
-},
-{
+}, {
   icon: 'i-carbon-logo-twitter',
   link: 'https://twitter.com/readpato',
   name: 'Twitter',
-},
-
-]
+}]
 </script>
 
 <template>
