@@ -1,22 +1,18 @@
 <script setup lang="ts">
-const props = withDefaults(defineProps<{
+withDefaults(defineProps<{
   href: string
   icon?: string
   secondary?: boolean
-  smallIcons?: boolean
+  small?: boolean
   target?: string
 }>(), {
-  smallIcons: false,
   target: '_blank',
 })
-
-const iconSize = computed(() => props.smallIcons ? 'w-5 h-5' : 'w-7 h-7')
 </script>
 
 <template>
   <NuxtLink :href="href" :target="target" :class="{ secondary }">
-    <div v-if="icon" class="block" :class="[iconSize, icon]" />
-    <slot />
+    <Icon :name="`carbon:${icon}`" :class="small ? 'w-5 h-5' : 'w-7 h-7'" />
   </NuxtLink>
 </template>
 
