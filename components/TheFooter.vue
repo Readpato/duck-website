@@ -1,18 +1,18 @@
 <script setup lang="ts">
 const links = [{
-  icon: 'i-carbon-logo-github',
+  icon: 'logo-github',
   link: 'https://github.com/Readpato',
   name: 'GitHub',
 }, {
-  icon: 'i-carbon-logo-linkedin',
+  icon: 'logo-linkedin',
   link: 'https://www.linkedin.com/in/patrickraedler/',
   name: 'LinkedIn',
 }, {
-  icon: 'i-carbon-logo-mastodon',
+  icon: 'logo-mastodon',
   link: 'https://mas.to/@readpato',
   name: 'Mastodon',
 }, {
-  icon: 'i-carbon-logo-twitter',
+  icon: 'logo-twitter',
   link: 'https://twitter.com/readpato',
   name: 'Twitter',
 }]
@@ -25,7 +25,7 @@ const links = [{
     <nav>
       <ul class="flex justify-center items-center space-x-2">
         <li v-for="{ icon, link, name } in links" :key="name">
-          <BaseLink :href="link" :icon="icon" small-icons />
+          <CtaIcon :href="link" :icon="icon" small />
         </li>
       </ul>
     </nav>
