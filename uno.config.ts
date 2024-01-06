@@ -15,4 +15,8 @@ export default defineConfig({
     presetUno(),
     presetAttributify(),
   ],
+  shortcuts: {
+    'rp-container': 'w-full max-w-160 mx-auto px-7 py-10',
+    'rp-title': 'mt4 mb6 text-4xl text-white font-extrabold',
+  },
 })
