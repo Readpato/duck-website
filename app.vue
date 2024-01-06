@@ -1,7 +1,7 @@
 <template>
-  <div class="app flex flex-col">
+  <div class="app" flex="~ col">
     <TheHeader />
-    <NuxtPage class="flex-grow" />
+    <NuxtPage flex-grow />
     <TheFooter />
   </div>
 </template>
@@ -13,9 +13,5 @@
   background-color: $c-black;
   color: $c-text;
   font-family: Inter, sans-serif;
-}
-
-p + p {
-  margin-top: toRem(16px);
 }
 </style>
