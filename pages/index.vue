@@ -9,6 +9,8 @@ useSeoMeta({
   twitterImage: '/readpato-logo.png',
   twitterCard: 'summary',
 })
+
+// TODO: Add preset attributify to elements
 </script>
 
 <template>
