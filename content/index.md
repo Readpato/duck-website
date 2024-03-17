@@ -1,6 +1,6 @@
-My name is Patrick Raedler and I am self-taught Frontend Developer.
+My name is Patrick Raedler and I am self-taught Software Engineer.
 
-Currently working at [MONOGRID](https://www.monogrid.com).
+Currently working at [cubemos](https://cubemos.com/).
 
 Administrator and contributor of [Schrödinger Hat](https://www.schrodinger-hat.it).
 
