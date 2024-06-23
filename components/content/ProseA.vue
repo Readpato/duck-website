@@ -8,21 +8,9 @@ withDefaults(defineProps<{
 </script>
 
 <template>
-  <NuxtLink :href="href" :target="target">
-    <slot />
-  </NuxtLink>
+  <SCButton variant="link" as-child class="p-0 h-fit underline decoration-foreground/40 hover:decoration-foreground/100 text-base">
+    <NuxtLink :href="href" :target="target">
+      <slot />
+    </NuxtLink>
+  </SCButton>
 </template>
-
-<style scoped lang="scss">
-a {
-  border-bottom: 1px solid rgba($c-border, .3);
-  color: $c-white;
-  opacity: 1;
-  text-decoration: none;
-  transition: border-bottom 0.2s ease;
-
-  &:hover {
-    border-bottom: 1px solid rgba($c-border, 1);
-  }
-}
-</style>
