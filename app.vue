@@ -11,8 +11,4 @@
   min-height: 100vh;
   min-height: 100dvh;
 }
-
-p + p {
-  margin-top: toRem(16px);
-}
 </style>
