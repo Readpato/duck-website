@@ -25,7 +25,7 @@ const links = [{
     <nav>
       <ul class="flex justify-center items-center space-x-2">
         <li v-for="{ icon, link, name } in links" :key="name">
-          <CtaIcon :href="link" :icon="icon" small />
+          <CtaIcon :to="link" :icon="icon" variant="outline" />
         </li>
       </ul>
     </nav>

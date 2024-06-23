@@ -1,5 +1,5 @@
 <template>
-  <div class="app flex flex-col">
+  <div class="app flex flex-col bg-background">
     <TheHeader />
     <NuxtPage class="flex-grow" />
     <TheFooter />
@@ -10,9 +10,6 @@
 .app {
   min-height: 100vh;
   min-height: 100dvh;
-  background-color: $c-black;
-  color: $c-text;
-  font-family: Inter, sans-serif;
 }
 
 p + p {

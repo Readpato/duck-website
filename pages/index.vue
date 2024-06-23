@@ -13,7 +13,7 @@ useSeoMeta({
 
 <template>
   <div class="container max-w-prose pt-10">
-    <h1 class="mt-4 mb-6 text-4xl font-extrabold text-white">
+    <h1 class="mt-4 mb-6 text-4xl font-extrabold">
       Hello there!
     </h1>
     <article>

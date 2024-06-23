@@ -21,6 +21,9 @@ export default defineNuxtConfig({
     prefix: 'SC',
     componentDir: './components/ui',
   },
+  colorMode: {
+    classSuffix: '',
+  },
   modules: [
     '@nuxt/image',
     '@nuxtjs/color-mode',
