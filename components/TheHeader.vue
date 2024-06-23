@@ -3,7 +3,7 @@ const link = 'https://github.com/Readpato'
 </script>
 
 <template>
-  <header class="h-12 border-b border-b-white w-full px-10">
+  <header class="h-12 border-b border-b-white w-full px-4">
     <nav class="flex justify-between items-center w-full h-full">
       <NuxtLink to="/" class="font-bold text-white">
         Patrick Raedler

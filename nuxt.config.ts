@@ -17,17 +17,15 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/jpeg', href: '~public/favicon.ico' }],
     },
   },
-  devtools : {
-    enabled: true
-  },
- shadcn: {
+  shadcn: {
     prefix: 'SC',
-    componentDir: './components/ui'
+    componentDir: './components/ui',
   },
   modules: [
-    "@nuxt/image",
-    "@nuxtjs/tailwindcss",
-    "shadcn-nuxt",
+    '@nuxt/image',
+    '@nuxtjs/color-mode',
+    '@nuxtjs/tailwindcss',
+    'shadcn-nuxt',
     '@nuxt/content',
     '@nuxt/test-utils/module',
     '@vueuse/nuxt',
