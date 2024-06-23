@@ -17,10 +17,22 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/jpeg', href: '~public/favicon.ico' }],
     },
   },
-  css: [
-    '@unocss/reset/tailwind.css',
+  devtools : {
+    enabled: true
+  },
+ shadcn: {
+    prefix: 'SC',
+    componentDir: './components/ui'
+  },
+  modules: [
+    "@nuxt/image",
+    "@nuxtjs/tailwindcss",
+    "shadcn-nuxt",
+    '@nuxt/content',
+    '@nuxt/test-utils/module',
+    '@vueuse/nuxt',
+    'nuxt-icon',
   ],
-  modules: ['@vueuse/nuxt', '@nuxt/test-utils/module', '@nuxt/content', '@unocss/nuxt', 'nuxt-icon'],
   vite: {
     css: {
       preprocessorOptions: {
