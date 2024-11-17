@@ -2,8 +2,8 @@
 
 const sassAdditionalData = () => {
   let additionalData = '@use "sass:math";'
-  additionalData += '@import "@/assets/scss/_utils.scss";'
-  additionalData += '@import "@/assets/scss/main.scss";'
+  additionalData += '@use "@/assets/scss/_utils.scss";'
+  additionalData += '@use "@/assets/scss/main.scss";'
   return additionalData
 }
 

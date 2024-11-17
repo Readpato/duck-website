@@ -1,0 +1,42 @@
+{
+  // "formatter": {
+  //   "code_actions": {
+  //     "source.fixAll.eslint": true,
+  //     "source.fixAll.tslint": true,
+  //     "source.fixAll.stylelint": true,
+  //     "source.sortImports": true
+  //   }
+  // }
+  "languages": {
+    "Vue.js": {
+      "formatter": {
+        "code_actions": {
+          "source.fixAll.eslint": true,
+          "source.fixAll.tslint": true,
+          "source.fixAll.stylelint": true,
+          "source.sortImports": true
+        }
+      }
+    },
+    "TypeScript": {
+      "formatter": {
+        "code_actions": {
+          "source.fixAll.eslint": true,
+          "source.fixAll.tslint": true,
+          "source.fixAll.stylelint": true,
+          "source.sortImports": true
+        }
+      }
+    },
+    "JavaScript": {
+      "formatter": {
+        "code_actions": {
+          "source.fixAll.eslint": true,
+          "source.fixAll.tslint": true,
+          "source.fixAll.stylelint": true,
+          "source.sortImports": true
+        }
+      }
+    }
+  }
+}
