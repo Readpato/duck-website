@@ -6,5 +6,4 @@ export default defineVitestConfig({
     environment: 'nuxt',
     include: ['*.test.ts'],
   },
-
 })

@@ -31,9 +31,3 @@ const links = [{
     </nav>
   </footer>
 </template>
-
-<style scoped lang="scss">
-.line {
-  background-color: $c-border;
-}
-</style>

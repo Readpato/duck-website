@@ -1,12 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
-const sassAdditionalData = () => {
-  let additionalData = '@use "sass:math";'
-  additionalData += '@use "@/assets/scss/_utils.scss";'
-  additionalData += '@use "@/assets/scss/main.scss";'
-  return additionalData
-}
-
 export default defineNuxtConfig({
   app: {
     head: {
@@ -17,28 +10,17 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/jpeg', href: '~public/favicon.ico' }],
     },
   },
-  shadcn: {
-    prefix: 'SC',
-    componentDir: './components/ui',
-  },
   colorMode: {
     classSuffix: '',
   },
   modules: [
+    '@nuxt/content',
+    '@nuxt/icon',
     '@nuxt/image',
+    '@nuxt/test-utils/module',
     '@nuxtjs/color-mode',
     '@nuxtjs/tailwindcss',
-    'shadcn-nuxt',
-    '@nuxt/content',
-    '@nuxt/test-utils/module',
     '@vueuse/nuxt',
-    'nuxt-icon',
   ],
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: { additionalData: sassAdditionalData() },
-      },
-    },
-  },
+  compatibilityDate: '2024-11-17',
 })
