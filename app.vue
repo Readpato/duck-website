@@ -1,5 +1,5 @@
 <template>
-  <div class="app flex flex-col">
+  <div class="app flex flex-col bg-base color-base">
     <TheHeader />
     <NuxtPage class="flex-grow" />
     <TheFooter />

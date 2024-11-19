@@ -1,9 +1,7 @@
 <script setup lang="ts">
 const colorMode = useColorMode()
 
-const icon = computed(() => colorMode.value === 'dark' ? 'sun' : 'moon')
-
-const handleColorChange = () => {
+function handleColorChange() {
   colorMode.preference === 'dark'
     ? colorMode.preference = 'light'
     : colorMode.preference = 'dark'
@@ -11,5 +9,5 @@ const handleColorChange = () => {
 </script>
 
 <template>
-  <CtaIcon :icon="icon" @click="handleColorChange" />
+  <CtaIcon :icon="colorMode.preference === 'dark' ? 'sun' : 'moon'" @click="handleColorChange" />
 </template>

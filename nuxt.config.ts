@@ -10,6 +10,12 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/jpeg', href: '~public/favicon.ico' }],
     },
   },
+  css: ['~/assets/css/tailwind.css'],
+  tailwindcss: {
+    config: {
+      darkMode: 'class',
+    },
+  },
   colorMode: {
     classSuffix: '',
   },
